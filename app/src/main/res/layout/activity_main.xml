@@ -97,4 +97,85 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <HorizontalScrollView
+        android:layout_width="397dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="283dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/homeScrollButton1"
+                android:layout_width="47dp"
+                android:layout_height="41dp"
+                android:background="@drawable/home_button_form"
+                android:fontFamily="@font/poppins_light"
+                android:text="All"
+                android:gravity="center_horizontal"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginEnd="17dp"/>
+
+            <TextView
+                android:id="@+id/homeScrollButton2"
+                android:layout_width="70dp"
+                android:layout_height="41dp"
+                android:background="@drawable/home_button_form"
+                android:text="UI/UX"
+                android:gravity="center"
+                android:lines="1"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginEnd="17dp"/>
+
+            <TextView
+                android:id="@+id/homeScrollButton4"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="17dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_button_form"
+                android:gravity="center_horizontal"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                android:text="3D Animation"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/homeScrollButton3"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/home_button_form"
+                android:gravity="center_horizontal"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                android:text="Illustration"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
