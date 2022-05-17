@@ -8,16 +8,18 @@ import com.example.second_task_kotlin.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
-    private val adapter = LiveStreamAdapter()
+    private val adapter = HomeLiveStreamAdapter()
+    private val viewPagerAdapter = HomeViewPagerAdapter()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         adapter.updateData(mockData)
+        viewPagerAdapter.updatePager(pagerData)
         setContentView(binding.root)
         init()
-
+        viewPagerInit()
     }
 
     private fun init(){
@@ -31,4 +33,10 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
+
+    private fun viewPagerInit(){
+        
+        binding.pager.adapter = viewPagerAdapter
+    }
+
 }

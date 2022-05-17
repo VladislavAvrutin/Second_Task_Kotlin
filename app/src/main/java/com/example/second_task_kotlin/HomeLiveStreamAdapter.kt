@@ -1,18 +1,16 @@
 package com.example.second_task_kotlin
 
-import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 
-class LiveStreamAdapter : RecyclerView.Adapter<LiveStreamAdapter.LsHolder>() {
+class HomeLiveStreamAdapter : RecyclerView.Adapter<HomeLiveStreamAdapter.LsHolder>() {
     private lateinit var lsList: ArrayList<LiveStream>
 
     fun updateData(list: ArrayList<LiveStream>) {
-        lsList = list
-        notifyDataSetChanged() }
+        lsList = list }
 
     class LsHolder(var item: View) : RecyclerView.ViewHolder(item){
 
