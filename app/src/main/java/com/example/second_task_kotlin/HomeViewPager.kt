@@ -24,7 +24,7 @@ val pagerData = arrayListOf(
     tv1 = "6 lessons",
     tv2 = "erere",
     tv3 = "ddssdsd",
-    avatar = R.drawable.avatar_1,
+    avatar = R.drawable.avatar_2,
     authorName = "Brendon Garis",
     authorProf = "programmer"),
 
@@ -36,7 +36,7 @@ val pagerData = arrayListOf(
     tv1 = "6 lessons",
     tv2 = "erere",
     tv3 = "ddssdsd",
-    avatar = R.drawable.avatar_1,
+    avatar = R.drawable.avatar_2,
     authorName = "Brendon Garis",
     authorProf = "programmer")
 )

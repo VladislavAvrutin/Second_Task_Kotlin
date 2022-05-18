@@ -5,6 +5,7 @@
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-ldltr/button.xml" value="0.215" />
+        <entry key="app/src/main/res/drawable/bot_nav_selector.xml" value="0.219" />
         <entry key="app/src/main/res/drawable/button.xml" value="0.215" />
         <entry key="app/src/main/res/drawable/detail_form_1.xml" value="0.215" />
         <entry key="app/src/main/res/drawable/detail_form_2.xml" value="0.2145" />
@@ -23,10 +24,11 @@
         <entry key="app/src/main/res/layout/home.xml" value="0.33" />
         <entry key="app/src/main/res/layout/home_button_recycler.xml" value="0.35989583333333336" />
         <entry key="app/src/main/res/layout/home_live_streaming_recycler_item.xml" value="0.75" />
-        <entry key="app/src/main/res/layout/home_pager1.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/home_pager1.xml" value="0.5" />
         <entry key="app/src/main/res/layout/live_streaming_recycler_item.xml" value="0.35989583333333336" />
         <entry key="app/src/main/res/layout/message.xml" value="0.35989583333333336" />
         <entry key="app/src/main/res/layout/schedule.xml" value="0.35989583333333336" />
+        <entry key="app/src/main/res/menu/bottom_nav_bar.xml" value="0.35989583333333336" />
       </map>
     </option>
   </component>

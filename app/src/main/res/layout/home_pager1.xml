@@ -8,20 +8,21 @@
 
     <ImageView
         android:id="@+id/background"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="299dp"
+        android:layout_height="360dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
         app:srcCompat="@drawable/base_background" />
 
     <TextView
         android:id="@+id/btViewPager"
         android:layout_width="85dp"
         android:layout_height="23dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/button"
         android:paddingStart="12dp"
         android:paddingTop="4dp"
@@ -31,8 +32,8 @@
         android:textColor="@color/white"
         android:textSize="10sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background" />
 
     <TextView
         android:id="@+id/header"
@@ -45,38 +46,15 @@
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background"
         app:lineHeight="25.2dp" />
-
-    <ImageView
-        android:id="@+id/clockIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="243dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/stopwatch" />
-
-    <TextView
-        android:id="@+id/publicationTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="242dp"
-        android:fontFamily="@font/poppins_light"
-        android:text="22:24:55"
-        android:textColor="@color/neutral_gray_2"
-        android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvOne"
         android:layout_width="55dp"
         android:layout_height="19dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="272dp"
         android:background="@drawable/detail_form_1"
         android:gravity="center"
@@ -87,8 +65,8 @@
         android:text="6 lessons"
         android:textColor="@color/white"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background" />
 
     <TextView
         android:id="@+id/tvTwo"
@@ -106,7 +84,7 @@
         android:textColor="@color/white"
         android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@+id/tvOne"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/background" />
 
     <TextView
         android:id="@+id/tvThree"
@@ -124,27 +102,54 @@
         android:textColor="@color/white"
         android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@+id/tvTwo"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/background" />
 
     <ImageView
         android:id="@+id/authorAvatar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="298dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background"
         app:srcCompat="@drawable/avatar_2" />
+
+    <LinearLayout
+        android:layout_width="63dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="241dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/stopwatch" />
+
+        <TextView
+            android:id="@+id/publicationTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_light"
+            android:text="22:24:33"
+            android:textColor="@color/neutral_gray_2"
+            android:textSize="10sp" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="104dp"
         android:layout_height="40dp"
         android:layout_marginStart="76dp"
-        android:layout_marginTop="298dp"
+        android:layout_marginBottom="23dp"
         android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background">
 
         <TextView
             android:id="@+id/authorName"
@@ -162,5 +167,6 @@
             android:text="Product Designer"
             android:textColor="@color/grey"
             android:textSize="10sp" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

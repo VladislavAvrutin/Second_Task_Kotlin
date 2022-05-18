@@ -35,7 +35,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun viewPagerInit(){
-        
         binding.pager.adapter = viewPagerAdapter
     }
 

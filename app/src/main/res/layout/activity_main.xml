@@ -10,7 +10,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/avatar_1" />
@@ -20,7 +20,7 @@
         android:layout_width="118dp"
         android:layout_height="22dp"
         android:layout_marginStart="74dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Hallo, Samuel"
         android:textColor="@color/neutral_gray"
@@ -33,7 +33,7 @@
         android:layout_width="9dp"
         android:layout_height="14dp"
         android:layout_marginStart="75dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="46dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/medal_vector" />
@@ -43,7 +43,7 @@
         android:layout_width="84dp"
         android:layout_height="21dp"
         android:layout_marginStart="96dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="44dp"
         android:text="+1600 Points"
         android:textColor="@color/yellow_egg"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +53,7 @@
         android:id="@+id/imageView8"
         android:layout_width="16dp"
         android:layout_height="20dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="31dp"
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -62,14 +62,12 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/liveStream"
         android:layout_width="368dp"
-        android:layout_height="73dp"
+        android:layout_height="75dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginTop="31dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/textView12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
         tools:ignore="SpeakableTextPresentCheck"
         tools:listitem="@layout/home_live_streaming_recycler_item" />
 
@@ -78,7 +76,7 @@
         android:layout_width="271dp"
         android:layout_height="27dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="196dp"
         android:text="Upcoming course of this week"
         android:textColor="@color/neutral_gray"
         android:textSize="18sp"
@@ -86,10 +84,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
         android:layout_width="397dp"
         android:layout_height="41dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="283dp"
+        android:layout_marginTop="239dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -170,12 +169,24 @@
         android:id="@+id/pager"
         android:layout_width="299dp"
         android:layout_height="360dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="348dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
 
     </androidx.viewpager2.widget.ViewPager2>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bNav"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        android:foregroundGravity="center_horizontal"
+        app:itemIconTint="@drawable/bot_nav_selector"
+        app:itemTextColor="@color/primary_red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_bar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
