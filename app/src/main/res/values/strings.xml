@@ -5,4 +5,15 @@
     <string name="profile">Profile</string>
     <string name="message">Message</string>
     <string name="minus">_</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="course_details">Course Details</string>
+    <string name="step_design_sprint_for_beginner">Step design sprint for beginner</string>
+    <string name="_6_lessons">6 lessons</string>
+    <string name="design">Design</string>
+    <string name="free">Free</string>
+    <string name="in_this_course_i_ll_show_the_step_by_step_day_by_day_process_to_build_better_products_just_as_google_slack_klm_and_manu_other_do">In this course I\'ll show the step by step, day by day process to build better products, just as Google, Slack, KLM and manu other do.</string>
+    <string name="laurel_seilha">Laurel Seilha</string>
+    <string name="product_designer">Product Designer</string>
+    <string name="free_e_book">Free e-book</string>
 </resources>

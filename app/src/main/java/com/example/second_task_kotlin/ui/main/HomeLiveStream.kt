@@ -1,4 +1,6 @@
-package com.example.second_task_kotlin
+package com.example.second_task_kotlin.ui.main
+
+import com.example.second_task_kotlin.R
 
 data class  LiveStream(val avatar: Int, val icon: Int ){
 

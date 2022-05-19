@@ -1,10 +1,11 @@
-package com.example.second_task_kotlin
+package com.example.second_task_kotlin.ui.main
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.second_task_kotlin.R
 
 class HomeLiveStreamAdapter : RecyclerView.Adapter<HomeLiveStreamAdapter.LsHolder>() {
     private lateinit var lsList: ArrayList<LiveStream>

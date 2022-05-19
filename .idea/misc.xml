@@ -21,6 +21,9 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3609375" />
         <entry key="app/src/main/res/layout/detail.xml" value="0.75" />
         <entry key="app/src/main/res/layout/detail_course.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/fragment_detail.xml" value="0.346875" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.3609375" />
+        <entry key="app/src/main/res/layout/fragment_message.xml" value="0.3609375" />
         <entry key="app/src/main/res/layout/home.xml" value="0.33" />
         <entry key="app/src/main/res/layout/home_button_recycler.xml" value="0.35989583333333336" />
         <entry key="app/src/main/res/layout/home_live_streaming_recycler_item.xml" value="0.75" />

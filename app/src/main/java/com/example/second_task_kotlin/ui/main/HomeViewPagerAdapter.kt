@@ -1,12 +1,12 @@
-package com.example.second_task_kotlin
+package com.example.second_task_kotlin.ui.main
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.second_task_kotlin.R
 
 class HomeViewPagerAdapter : RecyclerView.Adapter<HomeViewPagerAdapter.PagerVH>() {
     private lateinit var pagerList: ArrayList<HomeViewPager>

@@ -5,6 +5,11 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.second_task_kotlin.databinding.ActivityMainBinding
+import com.example.second_task_kotlin.ui.main.HomeLiveStreamAdapter
+import com.example.second_task_kotlin.ui.main.HomeViewPagerAdapter
+import com.example.second_task_kotlin.ui.main.mockData
+import com.example.second_task_kotlin.ui.main.pagerData
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -20,6 +25,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         init()
         viewPagerInit()
+
+        val navView : BottomNavigationView = findViewById(R.id.bNav)
+
     }
 
     private fun init(){
