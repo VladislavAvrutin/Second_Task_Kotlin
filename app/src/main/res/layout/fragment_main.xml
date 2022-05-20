@@ -9,7 +9,7 @@
     android:id="@+id/mainFragment">
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imAvatarHomePage"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/avatar_1" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvNameHomePage"
         android:layout_width="118dp"
         android:layout_height="22dp"
         android:layout_marginStart="74dp"
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/iconMedalHomePage"
         android:layout_width="9dp"
         android:layout_height="14dp"
         android:layout_marginStart="75dp"
@@ -42,7 +42,7 @@
         app:srcCompat="@drawable/medal_vector" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/bonusPointsHomePage"
         android:layout_width="84dp"
         android:layout_height="21dp"
         android:layout_marginStart="96dp"
@@ -53,7 +53,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/newsBellHomePage"
         android:layout_width="16dp"
         android:layout_height="20dp"
         android:layout_marginTop="31dp"
@@ -70,7 +70,7 @@
         android:layout_marginTop="31dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/bonusPointsHomePage"
         tools:ignore="SpeakableTextPresentCheck"
         tools:listitem="@layout/home_live_streaming_recycler_item" />
 
