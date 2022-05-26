@@ -30,10 +30,12 @@
         android:id="@+id/bNav"
         android:layout_width="match_parent"
         android:layout_height="64dp"
+        android:background="@color/white"
         app:itemIconTint="@drawable/bot_nav_selector"
         app:itemTextColor="@color/primary_red"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_bar" />
+        app:menu="@menu/bottom_bar"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

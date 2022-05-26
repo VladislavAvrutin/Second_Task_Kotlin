@@ -80,7 +80,7 @@
         android:layout_height="27dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="196dp"
-        android:text="Upcoming course of this week"
+        android:text="@string/upcoming_course_of_this_week"
         android:textColor="@color/neutral_gray"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="343dp"
+    android:layout_width="match_parent"
     android:layout_height="83dp"
+    android:layout_gravity="center_horizontal"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <ImageView
+        android:id="@+id/mesAvatar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
         android:src="@drawable/avatar_message"
-        android:layout_marginStart="16dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/mesName"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:layout_marginStart="72dp"
@@ -27,39 +29,39 @@
         />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/mesText"
         android:layout_width="243dp"
         android:layout_height="42dp"
         android:layout_marginStart="72dp"
         android:layout_marginTop="1dp"
         android:text="@string/hey_can_i_ask_something_i_need_your_help_please"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/mesName"
         android:fontFamily="@font/poppins_light"
         android:textColor="@color/neutral_gray_2"
         android:textSize="14sp"/>
 
     <TextView
-        android:layout_width="44dp"
+        android:id="@+id/mesTime"
+        android:layout_width="wrap_content"
         android:layout_height="21dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="60dp"
+        android:fontFamily="@font/poppins_light"
         android:text="15 min"
         android:textColor="@color/neutral_gray_2"
-        android:fontFamily="@font/poppins_light"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
+        android:id="@+id/mesNumberCommits"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="16dp"
-        android:text="4"
-        android:textColor="@color/white"
         android:background="@drawable/message_background"
         android:gravity="center_horizontal"
-        />
+        android:text="4"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

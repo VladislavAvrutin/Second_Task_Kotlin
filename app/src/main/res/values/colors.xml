@@ -16,5 +16,8 @@
     <color name="yellow_egg">#FCD034</color>
     <color name="primary_red">#EC5F5F</color>
     <color name="neutral_gray_2">#8C8C8C</color>
-    <color name="bot_nav_checkout">#200E32</color>
+    <color name="bot_nav_checkout">#EC5F5F</color>
+    <color name="grey_1">#333333</color>
+    <color name="grey_3">#9D9FA0</color>
+    <color name="grey_4">#C7C9D9</color>
 </resources>

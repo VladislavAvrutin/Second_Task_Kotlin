@@ -8,7 +8,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.second_task_kotlin.R
 
-class HomeViewPagerAdapter : RecyclerView.Adapter<HomeViewPagerAdapter.PagerVH>() {
+class HomeViewPagerAdapter(
+     val onClick: () -> Unit
+) : RecyclerView.Adapter<HomeViewPagerAdapter.PagerVH>() {
     private lateinit var pagerList: ArrayList<HomeViewPager>
     fun updatePager(list : ArrayList<HomeViewPager>){
         pagerList = list
@@ -21,6 +23,7 @@ class HomeViewPagerAdapter : RecyclerView.Adapter<HomeViewPagerAdapter.PagerVH>(
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.home_pager1, parent, false)
         return PagerVH(view)
+
     }
 
     override fun onBindViewHolder(holder: PagerVH, position: Int) {
@@ -34,6 +37,11 @@ class HomeViewPagerAdapter : RecyclerView.Adapter<HomeViewPagerAdapter.PagerVH>(
         holder.item.findViewById<ImageView>(R.id.authorAvatar).setImageResource(pagerList[position].avatar)
         holder.item.findViewById<TextView>(R.id.authorName).text = pagerList[position].authorName
         holder.item.findViewById<TextView>(R.id.authorProfession).text = pagerList[position].authorProf
+
+        holder.item.setOnClickListener {
+            onClick()
+        }
+
     }
 
     override fun getItemCount(): Int {

@@ -14,5 +14,6 @@
 
     <item android:id="@+id/profileFragment"
         android:title="@string/minus"
+
         android:icon="@drawable/bot_nav_bar_profile"/>
 </menu>
